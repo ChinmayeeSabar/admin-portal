@@ -6,9 +6,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login | Admin Portal</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/login.css" />
   </head>
   <body>
-    <h1>Login page</h1>
+    <div class="login">
+      <!-- login form -->
+      <div class="login__form">
+        <!-- header -->
+        <div class="login__form__header">
+          <div class="login__form__header__top">
+            <h1>LOGIN</h1>
+            <h2>Student | Admin | Guide</h2>
+          </div>
+
+          <p>Click here for any issues.</p>
+        </div>
+
+        <!--  -->
+        <form class="form">
+          <p class="text-gray">Welcome back! Please login to your account.</p>
+
+          <div class="form__control">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="12345@gmail.com" />
+          </div>
+
+          <div class="form__control">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              placeholder="*********"
+            />
+          </div>
+
+          <div class="form__footer">
+            <p>
+              <input type="checkbox" name="remember" id="remember" />
+              <label for="remember" class="text-gray">Remeber me</label>
+            </p>
+            <a href="#" class="text-gray">Forgot password?</a>
+          </div>
+
+          <button type="submit" class="btn btn__submit">Login</button>
+        </form>
+      </div>
+      <div class="login__img">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+            <li>
+              <a href="./pages/dashboard.html">Dashboard</a>
+            </li>
+          </ul>
+        </nav>
+        <h1>XYZ University</h1>
+
+        <img src="./assets/login_img.png" alt="University logo" />
+      </div>
+    </div>
     <script src="./js/index.js"></script>
   </body>
 </html>

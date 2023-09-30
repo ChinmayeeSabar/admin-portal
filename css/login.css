@@ -1,0 +1,99 @@
+.login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.login__form,
+.login__img {
+  flex: 0.5;
+}
+
+.login__form {
+  padding: 2em 3em;
+}
+
+.login__form__header__top {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 2em 0;
+}
+
+.login__form__header__top h2 {
+  color: var(--primary-blue);
+}
+
+.login__form p {
+  margin: 1em 0;
+}
+
+.form {
+  width: 100%;
+  display: block;
+}
+
+.form__control {
+  display: block;
+  border: 1px solid #333;
+  margin: 1em 0;
+  padding: 0.8em 1em;
+  border-left: 4px solid var(--primary-blue);
+}
+
+.form__control label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.form__control input {
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-blue);
+}
+
+.form__control input::placeholder {
+  color: var(--text-gray);
+}
+
+.form__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login__img {
+  background-color: #f3f0f0;
+  padding: 3em;
+}
+
+.login__img h1 {
+  color: var(--primary-blue);
+}
+
+.login__img img {
+  margin: 1em 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin-bottom: 2em;
+}
+
+nav ul {
+  display: flex;
+  gap: 2em;
+}
+
+nav ul li a {
+  color: #333;
+  border-bottom: 2px solid var(--primary-blue);
+}
