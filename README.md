@@ -1,6 +1,7 @@
 # Admin Portal
 
-Frontend Assignment COE Lab
+Frontend Assignment COE Lab 
+Task: Admin Portal
 
 ## Tech Stack
 
