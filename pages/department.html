@@ -1,70 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/department.css" />
-</head>
-<body>
+  </head>
+  <body>
     <main class="main">
-        <!-- sidebar -->
-        <aside class="sidebar">
-          <h1>XYZ Logo</h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="./dashboard.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="./result.html">Results</a>
-              </li>
-              <li>
-                <a href="#">Courses</a>
-              </li>
-              <li>
-                <a href="#">Notice</a>
-              </li>
-              <li>
-                <a href="#">Seminar</a>
-              </li>
-              <li>
-                <a href="./department.html">Department</a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-        <!-- content -->
-        <section class="content__wrapper">
-          <nav class="navbar">
-            <button></button>
-            <input type="search" name="search" id="search" />
-            <!-- dropdown -->
-            <!-- notification icon -->
-            <!-- avatar -->
-          </nav>
-  
-          <!-- page content start-->
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <h1>XYZ Logo</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="./dashboard.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="./result.html">Results</a>
+            </li>
+            <li>
+              <a href="#">Courses</a>
+            </li>
+            <li>
+              <a href="#">Notice</a>
+            </li>
+            <li>
+              <a href="#">Seminar</a>
+            </li>
+            <li>
+              <a href="./department.html">Department</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- content -->
+      <section class="content__wrapper">
+        <nav class="navbar">
+          <button></button>
+          <input type="search" name="search" id="search" />
+          <!-- dropdown -->
+          <!-- notification icon -->
+          <!-- avatar -->
+        </nav>
 
-          <div class="container">
-            <div class="container_bar">
-              <h4 class="logo">Department</h4>
-              <nav>
-                <button>Mechanical</button>
-                <button>Electronics</button>
-                <button>Civil</button>
-                <button>Computer Science</button>
-                <input type="search" name="search" id="search" placeholder="stat typing class section subject" />
-                <button>view</button>
-                <button>Disable Dept</button>
-              </nav>
+        <!-- page content start-->
 
+        <div class="container">
+          <div class="dashboard__topbar">
+            <h4>Department</h4>
+
+            <div class="btn__grid">
+              <button class="btn btn__orange">Mechanical</button>
+              <button class="btn btn__blue">Electronics</button>
+              <button class="btn btn__lightblue">Civil</button>
+              <button class="btn btn__red">Computer Science</button>
             </div>
+
+            <form>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="stat typing"
+              />
+              <button class="btn btn__lightblue">view</button>
+              <button class="btn btn__gray">Disable Dept</button>
+            </form>
           </div>
-  
-          <!-- page content end -->
-        </section>
-      </main>    
-</body>
+        </div>
+
+        <!-- page content end -->
+      </section>
+    </main>
+  </body>
 </html>

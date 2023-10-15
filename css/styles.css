@@ -29,6 +29,27 @@
   max-width: 240px;
 }
 
+.sidebar h1 {
+  width: fit-content;
+  padding: 0.5em 0.8em;
+  background: -webkit-linear-gradient(
+    45deg,
+    rgb(19, 74, 255),
+    rgb(41, 210, 98)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  padding: 0.5em 1em;
+}
+
+.sidebar nav ul li a:hover {
+  background: rgb(220, 214, 214);
+}
+
 .sidebar a {
   color: var(--text-gray);
   text-decoration: none;
@@ -74,4 +95,24 @@
   text-align: center;
   background: var(--primary-blue);
   color: var(--text-white);
+}
+
+.btn__orange {
+  background-color: orange;
+}
+
+.btn__blue {
+  background-color: var(--primary-blue);
+}
+
+.btn__lightblue {
+  background-color: rgb(119, 166, 226);
+}
+
+.btn__red {
+  background-color: rgb(234, 50, 50);
+}
+
+.btn__gray {
+  background-color: rgb(85, 82, 82);
 }

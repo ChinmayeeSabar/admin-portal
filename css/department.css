@@ -1,24 +1,40 @@
-.sidebar {
-    flex: 0.3;
+.btn__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  margin-right: auto;
 }
 
-.sidebar h1 {
-    width: fit-content;
-    padding: 0.5em 0.8em;
-    background: -webkit-linear-gradient(45deg,
-            rgb(19, 74, 255),
-            rgb(41, 210, 98));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.btn {
+  width: 100%;
+  font-size: 1em;
+  font-weight: normal;
+  color: white;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 0 #ccc;
 }
 
-.sidebar nav ul li a {
-    display: block;
-    padding: 0.5em 1em;
+.dashboard__topbar {
+  display: flex;
+  gap: 2em;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
 }
 
-.sidebar nav ul li a:hover {
-    background: rgb(220, 214, 214);
+form {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
-/* container page*/
+form input {
+  display: block;
+  width: 100%;
+}
+
+form .btn {
+  width: fit-content;
+}
