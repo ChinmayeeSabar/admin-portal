@@ -71,24 +71,16 @@
           </div>
         </div>
 
-        <div>
-          <h4>Application Request</h4>
-          <nav>
-            <ul>
-              <li>
-                <a href="#">All</a>
-              </li>
-              <li>
-                <a href="#">Monthly</a>
-              </li>
-              <li>
-                <a href="#">Weekly</a>
-              </li>
-              <li>
-                <a href="#">Today</a>
-              </li>
-            </ul>
-          </nav>
+        <div class="data__table">
+          <div class="flex justify-between items-center filters">
+            <h4>Application Request</h4>
+            <div class="btn-group flex filters__list">
+              <button class="btn btn__transparent active">All</button>
+              <button class="btn btn__transparent">Monthly</button>
+              <button class="btn btn__transparent">Weekly</button>
+              <button class="btn btn__transparent">Today</button>
+            </div>
+          </div>
 
           <table>
             <tr>
@@ -98,7 +90,7 @@
               <th>Department</th>
               <th>Profile Status</th>
               <th>Payment Status</th>
-              <th>Action</th>
+              <th class="table__action table__action__extended">Action</th>
             </tr>
 
             <tr>
@@ -106,10 +98,20 @@
               <td>10:00 PM</td>
               <td>Roshan Bishi</td>
               <td>Computer Science</td>
-              <td><button>Complete</button></td>
-              <td><a href="#">Paid</a></td>
-              <td><button>Accept</button>
-              <button>Reject</button></td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Paid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accept
+                </button>
+                <button class="btn btn__action btn__action__warning">
+                  Reject
+                </button>
+              </td>
             </tr>
 
             <tr>
@@ -117,10 +119,20 @@
               <td>17 May 2023</td>
               <td>Raunak Raj</td>
               <td>Civil</td>
-              <td><button>Pending</button></td>
-              <td><a href="#">Unpaid</a></td>
-              <td><button>Accept</button>
-              <button>Reject</button></td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__pending">
+                  Pending
+                </button>
+              </td>
+              <td class="table__action">Unpaid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accept
+                </button>
+                <button class="btn btn__action btn__action__warning">
+                  Reject
+                </button>
+              </td>
             </tr>
 
             <tr>
@@ -128,10 +140,20 @@
               <td>16 May 2023</td>
               <td>Bhavya Shah</td>
               <td>Mechanical</td>
-              <td><button>Complete</button></td>
-              <td><a href="#">Unpaid</a></td>
-              <td><button>Accept</button>
-              <button>Reject</button></td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Unpaid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accept
+                </button>
+                <button class="btn btn__action btn__action__warning">
+                  Reject
+                </button>
+              </td>
             </tr>
 
             <tr>
@@ -139,20 +161,38 @@
               <td>16 May 2023</td>
               <td>Anjali Gupta</td>
               <td>Computer Science</td>
-              <td><button>Complete</button></td>
-              <td><a href="#">Paid</a></td>
-              <td><button>Accept</button>
-              <button>Reject</button></td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Paid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accept
+                </button>
+                <button class="btn btn__action btn__action__warning">
+                  Reject
+                </button>
+              </td>
             </tr>
 
-            <tr>
+            <!-- <tr>
               <td>01015</td>
               <td>10 May 2023</td>
               <td>Vamsi Krishna</td>
               <td>Computer Science</td>
-              <td><button>Complete</button></td>
-              <td><a href="#">Paid</a></td>
-              <td><button>Accepted</button></td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Paid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accepted
+                </button>
+              </td>
             </tr>
 
             <tr>
@@ -160,10 +200,18 @@
               <td>09 May 2023</td>
               <td>Amit Mishra</td>
               <td>Computer Science</td>
-              <td><button>Complete</button></td>
-              <td><a href="#">Paid</a></td>
-              <td><button>Rejected</button></td>
-            </tr>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Paid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__warning">
+                  Rejected
+                </button>
+              </td>
+            </tr> -->
           </table>
         </div>
 
