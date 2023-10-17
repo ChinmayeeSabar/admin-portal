@@ -1,28 +1,3 @@
-.sidebar {
-  flex: 0.3;
-}
-
-.sidebar h1 {
-  width: fit-content;
-  padding: 0.5em 0.8em;
-  background: -webkit-linear-gradient(
-    45deg,
-    rgb(19, 74, 255),
-    rgb(41, 210, 98)
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.sidebar nav ul li a {
-  display: block;
-  padding: 1em;
-}
-
-.sidebar nav ul li a:hover {
-  background: rgb(220, 214, 214);
-}
-
 /* stats */
 .stat__wrapper {
   background-color: #fff;

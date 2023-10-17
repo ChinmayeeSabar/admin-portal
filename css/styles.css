@@ -52,14 +52,38 @@
 .sidebar nav ul li a {
   display: block;
   padding: 1em;
+  border: none;
+  border-bottom: 1px solid #fcfcfc;
+  position: relative;
+}
+
+.sidebar nav ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(110, 110, 234),
+    rgb(98, 190, 98),
+    rgb(195, 195, 127)
+  );
+  display: none;
 }
 
 .sidebar nav ul li a:hover {
-  background: rgb(220, 214, 214);
+  background: #eee9e9;
 }
 
 .sidebar nav ul li a.active {
-  background: rgb(220, 214, 214);
+  background: #eee9e9;
+}
+
+.sidebar nav ul li a:hover::before,
+.sidebar nav ul li a.active::before {
+  display: block;
 }
 
 .sidebar a {
