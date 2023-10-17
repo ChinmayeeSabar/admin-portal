@@ -16,10 +16,163 @@
 
 .sidebar nav ul li a {
   display: block;
-  padding: 0.5em 1em;
+  padding: 1em;
 }
 
 .sidebar nav ul li a:hover {
   background: rgb(220, 214, 214);
 }
 
+/* stats */
+.stat__wrapper {
+  background-color: #fff;
+  display: flex;
+  gap: 3em;
+  align-items: center;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.stat__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1em;
+}
+
+.stat__grid__item {
+  background-color: #f7f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.stat__grid__item > p:first-of-type {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 8px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.stat__grid__department {
+  flex-grow: 1;
+  padding-right: 2em;
+}
+
+.stat__grid__department__top {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin: 0.5em 0;
+}
+
+.stat__grid__department__top p {
+  display: flex;
+  align-items: center;
+}
+
+.stat__grid__department__top p span {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background-color: gray;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.stat__grid__department__top p:nth-of-type(1) span {
+  background-color: var(--primary-yellow);
+}
+
+.stat__grid__department__top p:nth-of-type(2) span {
+  background-color: var(--primary-blue);
+}
+
+.stat__grid__department__top p:nth-of-type(3) span {
+  background-color: var(--primary-lightblue);
+}
+
+.stat__grid__department__top p:nth-of-type(3) span {
+  background-color: var(--primary-red);
+}
+
+.progress__container {
+  margin-top: 2em;
+}
+
+.progress {
+  margin: 0.8em 0;
+}
+
+.progress__bar__container {
+  width: 100%;
+  height: 8px;
+  position: relative;
+  border-radius: 100px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress__bar__outer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-blue);
+  opacity: 0.3;
+}
+
+.progress:nth-of-type(1) .progress__bar__outer {
+  background-color: var(--primary-yellow);
+}
+
+.progress:nth-of-type(2) .progress__bar__outer {
+  background-color: var(--primary-blue);
+}
+
+.progress:nth-of-type(3) .progress__bar__outer {
+  background-color: var(--primary-lightblue);
+}
+
+.progress:nth-of-type(4) .progress__bar__outer {
+  background-color: var(--primary-red);
+}
+
+.progress__bar {
+  width: 50%;
+  height: 100%;
+  background-color: var(--primary-yellow);
+  opacity: 1;
+  border-radius: 100px;
+  position: absolute;
+}
+
+.progress:nth-of-type(1) .progress__bar {
+  background-color: var(--primary-yellow);
+  width: 60%;
+}
+
+.progress:nth-of-type(2) .progress__bar {
+  background-color: var(--primary-blue);
+  width: 70%;
+}
+
+.progress:nth-of-type(3) .progress__bar {
+  background-color: var(--primary-lightblue);
+  width: 45%;
+}
+
+.progress:nth-of-type(4) .progress__bar {
+  background-color: var(--primary-red);
+  width: 58%;
+}
