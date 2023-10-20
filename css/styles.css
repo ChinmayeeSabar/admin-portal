@@ -3,6 +3,10 @@
 :root {
   box-sizing: border-box;
   --primary-blue: #3751fe;
+  --primary-yellow: #e0e037;
+  --primary-lightblue: #a0bbe3;
+  --primary-red: #e44537;
+  --primary-green: #16be3a;
 
   /* texts */
   --text-gray: #00000099;
@@ -16,7 +20,14 @@
   padding: 0;
   box-sizing: inherit;
   list-style-type: none;
+}
+
+body {
   font-family: 'Inter', sans-serif;
+}
+
+i.fa {
+  font-size: 16px;
 }
 
 /* page layout */
@@ -41,24 +52,55 @@
   -webkit-text-fill-color: transparent;
 }
 
+.sidebar nav {
+  margin: 1em 0;
+}
+
 .sidebar nav ul li a {
   display: block;
-  padding: 0.5em 1em;
+  padding: 1em;
+  border: none;
+  border-bottom: 1px solid #fcfcfc;
+  position: relative;
+}
+
+.sidebar nav ul li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgb(110, 110, 234),
+    rgb(98, 190, 98),
+    rgb(195, 195, 127)
+  );
+  display: none;
 }
 
 .sidebar nav ul li a:hover {
-  background: rgb(220, 214, 214);
+  background: #f7f4f4;
+}
+
+.sidebar nav ul li a.active {
+  background: #f7f4f4;
+}
+
+.sidebar nav ul li a:hover::before,
+.sidebar nav ul li a.active::before {
+  display: block;
 }
 
 .sidebar a {
   color: var(--text-gray);
   text-decoration: none;
-  margin: 1em 0;
 }
 
 .content__wrapper {
   flex: 1;
-  background-color: rgb(247, 244, 244);
+  background-color: #f7f4f4;
   height: 100%;
   width: 100%;
   display: block;
@@ -69,6 +111,59 @@
   background: #fff;
   padding: 1em;
   margin-left: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__inner {
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.content__wrapper .navbar .search__wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+.content__wrapper .navbar .search__wrapper .btn__icon {
+  color: rgb(134, 127, 127) !important;
+}
+
+.content__wrapper .navbar .search__wrapper:focus-within {
+  border-color: rgb(77, 129, 201);
+}
+
+.content__wrapper .navbar input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
 }
 
 /* table related */
@@ -77,6 +172,70 @@
   margin: 1em;
   padding: 1em 0;
   border-radius: 8px;
+}
+
+table {
+  width: 100%;
+  padding: 0 2em;
+  margin: 1em 0;
+}
+
+tr {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+th {
+  font-weight: normal;
+}
+
+td {
+  font-size: 14px;
+}
+
+td,
+th {
+  display: block;
+  padding: 1em 0 !important;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid rgb(228, 228, 238);
+}
+
+tr > td:first-of-type,
+tr > th:first-of-type {
+  text-align: left;
+}
+
+.table__action {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 6px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.table__action__extended {
+  grid-column: 7/9;
+}
+
+.filters {
+  margin-top: 2em;
+  padding: 0 2em;
+}
+
+.filters__list {
+  gap: 1em;
+}
+
+.filters__list button {
+  border-radius: 100px;
+  background-color: transparent;
+  color: #888;
+}
+
+.filters__list button.active {
+  color: #333;
 }
 
 /* text utilities */
@@ -144,6 +303,12 @@
   color: rgb(227, 188, 59);
 }
 
+.btn__icon {
+  background-color: transparent;
+  font-size: 16px;
+  padding: 4px;
+}
+
 /* flexbox utilities */
 
 .flex {
@@ -160,4 +325,25 @@
 
 .items-center {
   align-items: center;
+}
+
+/* border colors */
+.border__blue {
+  border-color: var(--primary-blue) !important;
+}
+
+.border__red {
+  border-color: var(--primary-red) !important;
+}
+
+.border__yellow {
+  border-color: var(--primary-yellow) !important;
+}
+
+.border__lightblue {
+  border-color: var(--primary-lightblue) !important;
+}
+
+.border__green {
+  border-color: var(--primary-green) !important;
 }
