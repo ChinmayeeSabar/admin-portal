@@ -1,0 +1,96 @@
+.btn__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-right: auto;
+}
+
+.btn__grid .btn {
+    width: 100%;
+    font-size: 1em;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0 0 10px 0 #ccc;
+}
+
+.dashboard__topbar {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+form {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 500px;
+    gap: 10px;
+}
+
+form input {
+    display: block;
+    width: 100%;
+}
+
+form .btn {
+    width: fit-content;
+}
+
+.oneline__bar {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    padding: 1em;
+}
+
+.oneline__bar form {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 710px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgb(228, 228, 238);
+    gap: 20px;
+
+
+}
+
+.oneline__bar form .btn {
+    width: fit-content;
+}
+
+.main__content {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.main__content .boxes {
+    background-color: lightgreen;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    text-align: start;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.main__content .boxes h5 {
+    color: blue;
+}
+
+.main__content .boxes p {
+    color: gray;
+}
+
+.main__content .boxes h6 {
+    color: blue;
+    align-items: flex-end;
+    padding-top: 10px;
+}
