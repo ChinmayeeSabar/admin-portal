@@ -20,7 +20,14 @@
   padding: 0;
   box-sizing: inherit;
   list-style-type: none;
+}
+
+body {
   font-family: 'Inter', sans-serif;
+}
+
+i.fa {
+  font-size: 16px;
 }
 
 /* page layout */
@@ -74,11 +81,11 @@
 }
 
 .sidebar nav ul li a:hover {
-  background: #eee9e9;
+  background: #f7f4f4;
 }
 
 .sidebar nav ul li a.active {
-  background: #eee9e9;
+  background: #f7f4f4;
 }
 
 .sidebar nav ul li a:hover::before,
@@ -93,7 +100,7 @@
 
 .content__wrapper {
   flex: 1;
-  background-color: rgb(247, 244, 244);
+  background-color: #f7f4f4;
   height: 100%;
   width: 100%;
   display: block;
@@ -104,6 +111,59 @@
   background: #fff;
   padding: 1em;
   margin-left: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__inner {
+  gap: 16px;
+  flex-grow: 1;
+}
+
+.content__wrapper .navbar .search__wrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 8px 16px;
+  background-color: #eee;
+  margin: 0 auto;
+}
+
+.content__wrapper .navbar .search__wrapper .btn__icon {
+  color: rgb(134, 127, 127) !important;
+}
+
+.content__wrapper .navbar .search__wrapper:focus-within {
+  border-color: rgb(77, 129, 201);
+}
+
+.content__wrapper .navbar input {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  background-color: inherit;
+}
+
+.language {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background-color: #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 50%;
 }
 
 /* table related */
@@ -241,6 +301,12 @@ tr > th:first-of-type {
 
 .btn__action__pending {
   color: rgb(227, 188, 59);
+}
+
+.btn__icon {
+  background-color: transparent;
+  font-size: 16px;
+  padding: 4px;
 }
 
 /* flexbox utilities */
