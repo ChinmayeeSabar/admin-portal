@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/dashboard.css" />
-    <link rel="stylesheet" href="vishalDashboard.css" />
   </head>
   <body>
     <main class="main">
@@ -17,7 +20,7 @@
         <nav>
           <ul>
             <li>
-              <a href="./dashboard.html">Dashboard</a>
+              <a href="./dashboard.html" class="active">Dashboard</a>
             </li>
             <li>
               <a href="./result.html">Results</a>
@@ -40,117 +43,249 @@
       <!-- content -->
       <section class="content__wrapper">
         <nav class="navbar">
-          <button></button>
-          <input type="search" name="search" id="search" />
-          <!-- dropdown -->
-          <!-- notification icon -->
-          <!-- avatar -->
+          <button class="btn btn__icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+
+          <div class="flex items-center navbar__inner">
+            <div class="search__wrapper">
+              <input type="search" name="search" id="search" />
+              <button class="btn btn__icon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+            <!-- dropdown -->
+            <p class="language">
+              EN
+              <button class="btn btn__icon">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </button>
+            </p>
+            <!-- notification icon -->
+            <button class="btn btn__icon">
+              <i class="fa fa-bell-o" aria-hidden="true"></i>
+            </button>
+            <!-- avatar -->
+            <div class="avatar">A</div>
+          </div>
         </nav>
 
         <!-- page content start-->
-        <section>
-          <!---->
-          <div class="container">
-            <p>456</p>
-            <p>Total Applicant</p>
+
+        <!-- stats -->
+        <section class="stat__wrapper">
+          <div class="stat__grid">
+            <div class="stat__grid__item">
+              <p class="border__blue">456</p>
+              <p>Total Applicant</p>
+            </div>
+            <div class="stat__grid__item">
+              <p class="border__green">80</p>
+              <p>Accepted</p>
+            </div>
+            <div class="stat__grid__item">
+              <p class="border__red">23</p>
+              <p>Rejected</p>
+            </div>
+            <div class="stat__grid__item">
+              <p class="border__lightblue">121</p>
+              <p>Pending</p>
+            </div>
           </div>
-          <div class="container">
-            <p>80</p>
-            <p>Accepted</p>
-          </div>
-          <div class="contianer">
-            <p>23</p>
-            <p>Rejected</p>
-          </div>
-          <div class="container">
-            <p>121</p>
-            <p>Pending</p>
-          </div>
-          <div>
+          <div class="stat__grid__department">
             <h3>Department</h3>
-            <p>Mechanical Electrical Civil Computer Science</p>
-            <p>Mechanical</p>
-            <p>..........</p>
-            <p>Electrical</p>
-            <p>..........</p>
-            <p>Civil</p>
-            <p>..........</p>
-            <p>Computer Science</p>
-            <p>..........</p>
+
+            <div class="stat__grid__department__top">
+              <p><span></span>Mechanical</p>
+              <p><span></span>Electrical</p>
+              <p><span></span>Civil</p>
+              <p><span></span>Computer Science</p>
+            </div>
+
+            <div class="progress__container">
+              <div class="progress">
+                <p>Mechanical</p>
+
+                <div class="progress__bar__container">
+                  <div class="progress__bar__outer"></div>
+                  <div class="progress__bar"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <p>Electrical</p>
+                <div class="progress__bar__container">
+                  <div class="progress__bar__outer"></div>
+                  <div class="progress__bar"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <p>Civil</p>
+                <div class="progress__bar__container">
+                  <div class="progress__bar__outer"></div>
+                  <div class="progress__bar"></div>
+                </div>
+              </div>
+
+              <div class="progress">
+                <p>Computer Science</p>
+
+                <div class="progress__bar__container">
+                  <div class="progress__bar__outer"></div>
+                  <div class="progress__bar"></div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
+
+        <!-- data table -->
+        <div class="data__table">
+          <div class="flex justify-between items-center filters">
+            <h4>Application Request</h4>
+            <div class="btn-group flex filters__list">
+              <button class="btn btn__transparent active">All</button>
+              <button class="btn btn__transparent">Monthly</button>
+              <button class="btn btn__transparent">Weekly</button>
+              <button class="btn btn__transparent">Today</button>
+            </div>
+          </div>
+
+          <table>
+            <tr>
+              <th>Application ID</th>
+              <th>Date/Time</th>
+              <th>Student Name</th>
+              <th>Department</th>
+              <th>Profile Status</th>
+              <th>Payment Status</th>
+              <th class="table__action table__action__extended">Action</th>
+            </tr>
+
+            <tr>
+              <td>01015</td>
+              <td>10:00 PM</td>
+              <td>Roshan Bishi</td>
+              <td>Computer Science</td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Paid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accept
+                </button>
+                <button class="btn btn__action btn__action__warning">
+                  Reject
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>01016</td>
+              <td>17 May 2023</td>
+              <td>Raunak Raj</td>
+              <td>Civil</td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__pending">
+                  Pending
+                </button>
+              </td>
+              <td class="table__action">Unpaid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accept
+                </button>
+                <button class="btn btn__action btn__action__warning">
+                  Reject
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>01017</td>
+              <td>16 May 2023</td>
+              <td>Bhavya Shah</td>
+              <td>Mechanical</td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Unpaid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accept
+                </button>
+                <button class="btn btn__action btn__action__warning">
+                  Reject
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>01018</td>
+              <td>16 May 2023</td>
+              <td>Anjali Gupta</td>
+              <td>Computer Science</td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Paid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accept
+                </button>
+                <button class="btn btn__action btn__action__warning">
+                  Reject
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>01015</td>
+              <td>10 May 2023</td>
+              <td>Vamsi Krishna</td>
+              <td>Computer Science</td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Paid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__success">
+                  Accepted
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td>01015</td>
+              <td>09 May 2023</td>
+              <td>Amit Mishra</td>
+              <td>Computer Science</td>
+              <td class="table__action">
+                <button class="btn btn__action btn__action__success">
+                  Complete
+                </button>
+              </td>
+              <td class="table__action">Paid</td>
+              <td class="table__action table__action__extended">
+                <button class="btn btn__action btn__action__warning">
+                  Rejected
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+
         <!-- page content end -->
-        <table>
-          <tr>
-            <th>Application ID</th>
-            <th>Date/Time</th>
-            <th>Student Name</th>
-            <th>Department</th>
-            <th>Profile Status</th>
-            <th>Payment Status</th>
-            <th>Action</th>
-          </tr>
-
-          <tr>
-            <td>01015</td>
-            <td>10:00 PM</td>
-            <td>Roshan Bishi</td>
-            <td>Computer Science</td>
-            <td><button>Complete</button></td>
-            <td><a href="#">Paid</a></td>
-            <td><button>Accept</button> <button>Reject</button></td>
-          </tr>
-
-          <tr>
-            <td>01016</td>
-            <td>17 May 2023</td>
-            <td>Raunak Raj</td>
-            <td>Civil</td>
-            <td><button>Pending</button></td>
-            <td><a href="#">Unpaid</a></td>
-            <td><button>Accept</button> <button>Reject</button></td>
-          </tr>
-
-          <tr>
-            <td>01017</td>
-            <td>16 May 2023</td>
-            <td>Bhavya Shah</td>
-            <td>Mechanical</td>
-            <td><button>Complete</button></td>
-            <td><a href="#">Unpaid</a></td>
-            <td><button>Accept</button> <button>Reject</button></td>
-          </tr>
-
-          <tr>
-            <td>01018</td>
-            <td>16 May 2023</td>
-            <td>Anjali Gupta</td>
-            <td>Computer Science</td>
-            <td><button>Complete</button></td>
-            <td><a href="#">Paid</a></td>
-            <td><button>Accept</button> <button>Reject</button></td>
-          </tr>
-
-          <tr>
-            <td>01015</td>
-            <td>10 May 2023</td>
-            <td>Vamsi Krishna</td>
-            <td>Computer Science</td>
-            <td><button>Complete</button></td>
-            <td><a href="#">Paid</a></td>
-            <td><button>Accepted</button></td>
-          </tr>
-
-          <tr>
-            <td>01015</td>
-            <td>09 May 2023</td>
-            <td>Amit Mishra</td>
-            <td>Computer Science</td>
-            <td><button>Complete</button></td>
-            <td><a href="#">Paid</a></td>
-            <td><button>Rejected</button></td>
-          </tr>
-        </table>
       </section>
     </main>
   </body>
