@@ -23,6 +23,11 @@
     padding: 1em;
 }
 
+.dashboard__topbar h4 {
+    color: blue;
+    padding-left: 20px;
+}
+
 form {
     flex-grow: 1;
     display: flex;
@@ -47,6 +52,12 @@ form .btn {
     background-color: white;
     align-items: center;
     padding: 1em;
+    padding-bottom: 2px;
+    border-bottom: 1px solid gray;
+}
+
+.oneline__bar h4 {
+    color: blue;
 }
 
 .oneline__bar form {
@@ -55,30 +66,34 @@ form .btn {
     align-items: center;
     padding-left: 710px;
     padding-bottom: 20px;
-    border-bottom: 2px solid rgb(228, 228, 238);
-    gap: 20px;
-
-
 }
 
 .oneline__bar form .btn {
     width: fit-content;
 }
 
+.oneline__bar form .btn__blue {
+    color: white;
+    border-radius: 3px;
+
+}
+
 .main__content {
     display: grid;
     grid-template-columns: auto auto auto auto;
     background-color: white;
-    padding: 10px;
+    padding: 20px;
 }
 
 .main__content .boxes {
-    background-color: lightgreen;
+    background: linear-gradient(180deg, #B3F295 0%, rgba(126, 255, 65, 0) 100%);
+    border-radius: 7px;
     margin: 10px;
-    padding: 20px;
+    padding: 25px;
     font-size: 20px;
     text-align: start;
     font-family: "Lucida Console", "Courier New", monospace;
+    box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 .main__content .boxes h5 {
@@ -87,10 +102,13 @@ form .btn {
 
 .main__content .boxes p {
     color: gray;
+    font-size: 20px;
+    padding-bottom: 10px;
 }
 
 .main__content .boxes h6 {
     color: blue;
     align-items: flex-end;
+    font-family: Arial, Helvetica, sans-serif;
     padding-top: 10px;
 }
