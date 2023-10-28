@@ -292,6 +292,10 @@ tr > th:first-of-type {
   background-color: rgb(85, 82, 82);
 }
 
+.btn__green {
+  background-color: rgb(26, 182, 73);
+}
+
 .btn__action {
   background-color: rgb(235, 230, 230);
   border: none;

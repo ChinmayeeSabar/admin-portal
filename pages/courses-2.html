@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses-2</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/courses-2.css" />
@@ -10,121 +10,136 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-</head>
-<body>
+  </head>
+  <body>
     <main class="main">
-        <!-- sidebar -->
-        <aside class="sidebar">
-          <h1>XYZ Logo</h1>
-          <nav>
-            <ul>
-              <li>
-                <a href="./dashboard.html">Dashboard</a>
-              </li>
-              <li>
-                <a href="./result.html" class="active">Results</a>
-              </li>
-              <li>
-                <a href="./courses.html">Courses</a>
-              </li>
-              <li>
-                <a href="./notices.html">Notice</a>
-              </li>
-              <li>
-                <a href="./seminar.html">Seminar</a>
-              </li>
-              <li>
-                <a href="./department.html">Department</a>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-        <!-- content -->
-        <section class="content__wrapper">
-          <nav class="navbar">
+      <!-- sidebar -->
+      <aside class="sidebar">
+        <h1>XYZ Logo</h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="./dashboard.html">Dashboard</a>
+            </li>
+            <li>
+              <a href="./result.html" class="active">Results</a>
+            </li>
+            <li>
+              <a href="./courses.html">Courses</a>
+            </li>
+            <li>
+              <a href="./notices.html">Notice</a>
+            </li>
+            <li>
+              <a href="./seminar.html">Seminar</a>
+            </li>
+            <li>
+              <a href="./department.html">Department</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      <!-- content -->
+      <section class="content__wrapper">
+        <nav class="navbar">
+          <button class="btn btn__icon">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+
+          <div class="flex items-center navbar__inner">
+            <div class="search__wrapper">
+              <input type="search" name="search" id="search" />
+              <button class="btn btn__icon">
+                <i class="fa fa-search" aria-hidden="true"></i>
+              </button>
+            </div>
+            <!-- dropdown -->
+            <p class="language">
+              EN
+              <button class="btn btn__icon">
+                <i class="fa fa-chevron-down" aria-hidden="true"></i>
+              </button>
+            </p>
+            <!-- notification icon -->
             <button class="btn btn__icon">
-              <i class="fa fa-bars" aria-hidden="true"></i>
+              <i class="fa fa-bell-o" aria-hidden="true"></i>
             </button>
-  
-            <div class="flex items-center navbar__inner">
-              <div class="search__wrapper">
-                <input type="search" name="search" id="search" />
+            <!-- avatar -->
+            <div class="avatar">A</div>
+          </div>
+        </nav>
+
+        <!-- page content start-->
+        <div class="container">
+          <div class="dashboard__topbar">
+            <h2 id="cour">CRYPTOGRARHY AND NETWORK SECURITY</h2>
+
+            <form>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="start typing class section subject"
+              />
+              <button class="btn btn__lightblue">view</button>
+              <button class="btn btn__gray">Disable Dep</button>
+            </form>
+          </div>
+        </div>
+        <!-- section (columns) -->
+        <div class="section__container container">
+          <section class="classes__list">
+            <div class="classes__list__topbar">
+              <h4>
+                <i class="fa fa-pie-chart" aria-hidden="true"></i> Classes and
+                Lab
+              </h4>
+              <div class="icons">
                 <button class="btn btn__icon">
                   <i class="fa fa-search" aria-hidden="true"></i>
                 </button>
-              </div>
-              <!-- dropdown -->
-              <p class="language">
-                EN
+                <button class="btn btn__icon">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
                 <button class="btn btn__icon">
                   <i class="fa fa-chevron-down" aria-hidden="true"></i>
                 </button>
-              </p>
-              <!-- notification icon -->
-              <button class="btn btn__icon">
-                <i class="fa fa-bell-o" aria-hidden="true"></i>
-              </button>
-              <!-- avatar -->
-              <div class="avatar">A</div>
-            </div>
-          </nav>
-  
-          <!-- page content start-->
-          <div class="container">
-            <div class="dashboard__topbar">
-              <p id="cour">CRYPTOGRARHY AND NETWORK SECURITY</p>
-  
-              <form>
-                <input
-                  type="search"
-                  name="search"
-                  id="search"
-                  placeholder="start typing class section subject"
-                />
-                <button class="btn btn__lightblue">view</button>
-                <button class="btn btn__gray">Disable Dep</button>
-              </form>
-            </div>
-          </div>
-          <section class="sec-1">
-            <div class="div__nav">
-              <p class="courses_header">Classes and Lab</p>
+              </div>
             </div>
 
-            <div class="div__content" >
-                 <div class="box">
-                <p><time>21-Aug-2021</time></p> 
+            <div class="classes__list__content">
+              <div class="class__item">
+                <p><time>21-Aug-2021</time></p>
                 <p>CRYPTOGRARHY AND NETWORK SECURITY</p>
                 <p><time>9:00 am</time> to <time>10:00</time></p>
-                  
-                 </div>
-                 <div class="box">
-                  <p><time>21-Aug-2021</time></p> 
-                  <p>CRYPTOGRARHY AND NETWORK  SECURITY</p>
-                  <p><time>9:00 am</time> to <time>10:00</time></p>
-                 </div>
-                 <div class="box">
-                  <p><time>21-Aug-2021</time></p> 
-                  <p>CRYPTOGRARHY AND NETWORK SECURITY</p>
-                  <p><time>9:00 am</time> to <time>10:00</time></p>
-                 </div>
-                 <div class="box">
-                  <p><time>21-Aug-2021</time></p> 
-                  <p>CRYPTOGRARHY AND NETWORK SECURITY</p>
-                  <p><time>9:00 am</time> to <time>10:00</time></p>
-                 </div>
-                 <div class="box">
-                  <p><time>21-Aug-2021</time></p> 
-                  <p>CRYPTOGRARHY AND NETWORK SECURITY</p>
-                  <p><time>9:00 am</time> to <time>10:00</time></p>
-                 </div>
+              </div>
+              <div class="class__item">
+                <p><time>21-Aug-2021</time></p>
+                <p>CRYPTOGRARHY AND NETWORK SECURITY</p>
+                <p><time>9:00 am</time> to <time>10:00</time></p>
+              </div>
+              <div class="class__item">
+                <p><time>21-Aug-2021</time></p>
+                <p>CRYPTOGRARHY AND NETWORK SECURITY</p>
+                <p><time>9:00 am</time> to <time>10:00</time></p>
+              </div>
+              <div class="class__item">
+                <p><time>21-Aug-2021</time></p>
+                <p>CRYPTOGRARHY AND NETWORK SECURITY</p>
+                <p><time>9:00 am</time> to <time>10:00</time></p>
+              </div>
+              <div class="class__item">
+                <p><time>21-Aug-2021</time></p>
+                <p>CRYPTOGRARHY AND NETWORK SECURITY</p>
+                <p><time>9:00 am</time> to <time>10:00</time></p>
+              </div>
             </div>
           </section>
-          <section class="sec-1">
-            <div class="div__nav">
-              <p class="courses_header">Assignment</p>
+          <section class="assignment__list">
+            <div class="assignment__list__topbar">
+              <h4>Assignment</h4>
             </div>
-            <div class="div__content" >
+            <div class="assignment__list__content">
               <table>
                 <tr>
                   <th>Name</th>
@@ -136,58 +151,65 @@
                   <td>Assignment-1</td>
                   <td>CHC2D</td>
                   <td>20</td>
-                  <td class="btn btn__green"><button>Elective</button></td>
+                  <td><button class="btn btn__green">Elective</button></td>
                 </tr>
                 <tr>
                   <td>Assignment-2</td>
                   <td>SNC!D</td>
                   <td>20</td>
-                  <td class="btn btn__green"><button>Core</button></td>
+                  <td><button class="btn btn__green">Core</button></td>
                 </tr>
                 <tr>
                   <td>Assignment-3</td>
                   <td>CHC2D</td>
                   <td>20</td>
-                  <td class="btn btn__green"><button>Elective</button></td>
+                  <td><button class="btn btn__green">Elective</button></td>
                 </tr>
                 <tr>
                   <td>Assignment-4</td>
                   <td>SNC!D</td>
                   <td>30</td>
-                  <td class="btn btn__green"><button>Core</button></td>
+                  <td><button class="btn btn__green">Core</button></td>
                 </tr>
                 <tr>
                   <td>Assignment-5</td>
                   <td>CHC2D</td>
                   <td>20</td>
-                  <td class="btn btn__action__success"><button>Elective</button></td>
+                  <td>
+                    <button class="btn btn__green">Elective</button>
+                  </td>
                 </tr>
-
-                </table>
+              </table>
             </div>
-
           </section>
-          <div class="div">
-            
-            <img></img>
-            <p>7</p>
-            <p>Total Assignment</p>
+          <div class="stats">
+            <div class="stat__item">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
+              <div class="stat__item__content">
+                <h1>7</h1>
+                <p>Total Assignment</p>
+              </div>
+            </div>
+            <div class="stat__item">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
 
-          </div>
-          <div class="div">
+              <div class="stat__item__content">
+                <h1>26</h1>
+                <p>Total Classes</p>
+              </div>
+            </div>
+            <div class="stat__item">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
 
-            <img></img>
-            <p>26</p>
-            <p>Total Classes</p>
-
+              <div class="stat__item__content">
+                <h1>12</h1>
+                <p>Total Labs</p>
+              </div>
+            </div>
           </div>
-          <div class="div">
-            <img></img>
-            <p>12</p>
-            <p>Total Labs</p>
-          </div>
-          <!-- page content end -->
-        </section>
-      </main>
-</body>
+        </div>
+        <!-- page content end -->
+      </section>
+    </main>
+  </body>
 </html>
