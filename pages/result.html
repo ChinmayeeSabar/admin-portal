@@ -10,6 +10,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/result.css" />
   </head>
   <body>
     <main class="main">
@@ -83,6 +84,317 @@
         </nav>
 
         <!-- page content start-->
+
+        <div class="result">
+          <div class="result__topbar">
+            <div></div>
+            <form>
+              <input
+                type="search"
+                name="search"
+                id="search"
+                placeholder="start typing class section subject"
+              />
+              <button class="btn btn__lightblue">view</button>
+              <button class="btn btn__gray">Disable Dep</button>
+            </form>
+          </div>
+
+          <div class="result__content">
+            <h4>Manage Students</h4>
+
+            <button class="btn btn__green">Add student</button>
+
+            <div class="result__data">
+              <div class="flex items-center select__filters">
+                <!-- academic session -->
+                <select name="session" id="session">
+                  <option disabled selected>Select academic session</option>
+                  <option value="2022-23">2022-23</option>
+                  <option value="2022-23">2022-23</option>
+                  <option value="2022-23">2022-23</option>
+                  <option value="2022-23">2022-23</option>
+                  <option value="2022-23">2022-23</option>
+                </select>
+
+                <!-- class -->
+                <select name="class" id="class">
+                  <option disabled selected>Select Class</option>
+                  <option value="First_year">First Year</option>
+                  <option value="Second_year">Second Year</option>
+                  <option value="Third_year">Third Year</option>
+                  <option value="Fourth_year">Fourth Year</option>
+                </select>
+
+                <!-- sections -->
+                <select name="section" id="section">
+                  <option disabled selected>Select section</option>
+                  <option value="a">A</option>
+                  <option value="b">B</option>
+                  <option value="c">C</option>
+                  <option value="d">D</option>
+                </select>
+
+                <!-- subjects -->
+                <select name="subjects" id="subjects">
+                  <option disabled selected>Select Subject</option>
+                  <option value="Engineering Mathematics">
+                    Engineering Mathematics
+                  </option>
+                  <option value="Computer Science">Computer Science</option>
+                  <option value="Business communication">
+                    Business communication
+                  </option>
+                </select>
+              </div>
+
+              <div class="table__wrapper">
+                <div class="table__filters">
+                  <button class="btn btn__filter">Filter</button>
+
+                  <div class="flex items-center filter__btns">
+                    <div class="btn btn__blue">Export</div>
+                    <div class="btn btn__blue">Show/Hide</div>
+                    <div class="btn btn__blue">Enrollment Status</div>
+                    <div class="btn btn__gray">Selected</div>
+                  </div>
+                </div>
+
+                <div class="table">
+                  <div class="table__header">
+                    <input type="checkbox" name="selected" id="selected" />
+
+                    <p>Profile</p>
+                    <p>First Name</p>
+                    <p>Last Name</p>
+                    <p>Admission No</p>
+                    <p>Email</p>
+                    <p>Contact</p>
+                    <p class="actions">Actions</p>
+                  </div>
+
+                  <div class="table__row">
+                    <input type="checkbox" name="selected-1" id="selected-1" />
+                    <p class="profile">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </p>
+                    <p>Amiee</p>
+                    <p>Liu</p>
+                    <p>21001</p>
+                    <p>aimee@gmail.com</p>
+                    <p>1234567890</p>
+                    <p class="actions">
+                      <button class="btn btn__icon">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </p>
+                  </div>
+                  <div class="table__row">
+                    <input type="checkbox" name="selected-1" id="selected-1" />
+                    <p class="profile">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </p>
+                    <p>Amiee</p>
+                    <p>Liu</p>
+                    <p>21001</p>
+                    <p>aimee@gmail.com</p>
+                    <p>1234567890</p>
+                    <p class="actions">
+                      <button class="btn btn__icon">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </p>
+                  </div>
+                  <div class="table__row">
+                    <input type="checkbox" name="selected-1" id="selected-1" />
+                    <p class="profile">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </p>
+                    <p>Amiee</p>
+                    <p>Liu</p>
+                    <p>21001</p>
+                    <p>aimee@gmail.com</p>
+                    <p>1234567890</p>
+                    <p class="actions">
+                      <button class="btn btn__icon">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </p>
+                  </div>
+                  <div class="table__row">
+                    <input type="checkbox" name="selected-1" id="selected-1" />
+                    <p class="profile">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </p>
+                    <p>Amiee</p>
+                    <p>Liu</p>
+                    <p>21001</p>
+                    <p>aimee@gmail.com</p>
+                    <p>1234567890</p>
+                    <p class="actions">
+                      <button class="btn btn__icon">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </p>
+                  </div>
+                  <div class="table__row">
+                    <input type="checkbox" name="selected-1" id="selected-1" />
+                    <p class="profile">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </p>
+                    <p>Amiee</p>
+                    <p>Liu</p>
+                    <p>21001</p>
+                    <p>aimee@gmail.com</p>
+                    <p>1234567890</p>
+                    <p class="actions">
+                      <button class="btn btn__icon">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </p>
+                  </div>
+                  <div class="table__row">
+                    <input type="checkbox" name="selected-1" id="selected-1" />
+                    <p class="profile">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </p>
+                    <p>Amiee</p>
+                    <p>Liu</p>
+                    <p>21001</p>
+                    <p>aimee@gmail.com</p>
+                    <p>1234567890</p>
+                    <p class="actions">
+                      <button class="btn btn__icon">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </p>
+                  </div>
+                  <div class="table__row">
+                    <input type="checkbox" name="selected-1" id="selected-1" />
+                    <p class="profile">
+                      <i class="fa fa-user" aria-hidden="true"></i>
+                    </p>
+                    <p>Amiee</p>
+                    <p>Liu</p>
+                    <p>21001</p>
+                    <p>aimee@gmail.com</p>
+                    <p>1234567890</p>
+                    <p class="actions">
+                      <button class="btn btn__icon">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-folder-o" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-credit-card" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-lock" aria-hidden="true"></i>
+                      </button>
+                      <button class="btn btn__icon">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                      </button>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
         <!-- page content end -->
       </section>
